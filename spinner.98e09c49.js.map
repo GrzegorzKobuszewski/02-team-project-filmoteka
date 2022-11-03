@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/spinner.js"],"names":["$","window","on","fadeOut","fadeIn"],"mappings":";AAAAA,EAAEC,QAAQC,GAAG,OAAQ,WACnBF,EAAE,WAAWG,QAAQ,KACrBH,EAAE,YAAYI,OAAO","file":"spinner.98e09c49.js","sourceRoot":"../src","sourcesContent":["$(window).on('load', function () {\n  $('.loader').fadeOut(400);\n  $('.content').fadeIn(400);\n});\n"]}
