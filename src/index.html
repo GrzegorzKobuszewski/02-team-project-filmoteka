@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <div class="content">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/modal.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/pagination.html"></include>
+      <include src="./partials/footer.html"></include>
+      <include src="./partials/prettiers.html"></include>
+      <include src="./partials/spinner.html"></include>
+      <include src="./partials/team-modal.html"></include>
+    </div>
+    <!-- <include src=""></include> -->
+
+    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+    <script src="./js/fetchData.js"></script>
+    <script src="./index.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/filterByGenres.js"></script>
+    <script src="./js/spinner.js"></script>
+    <script src="./js/toggler.js"></script>
+    <script src="./js/teamModal.js"></script>
+    <script src="./js/topButton.js"></script>
+    <script src="./js/genresOption.js"></script>
+  </body>
+</html>

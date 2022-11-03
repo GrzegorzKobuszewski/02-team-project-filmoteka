@@ -1,0 +1,33 @@
+.content::after {
+  display: none;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #9e98a2;
+}
+
+.loader > div {
+  height: 100px;
+  width: 100px;
+  border: 15px solid #9e98a2;
+  border-top-color: #0082bc;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

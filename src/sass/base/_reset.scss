@@ -1,0 +1,58 @@
+:root {
+    font-family: $main-font;
+}
+
+body {
+    font-family: $main-font;
+    transition: $shift;
+    letter-spacing: 0.10px;
+    line-height: 1.15;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: currentColor;
+}
+
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}

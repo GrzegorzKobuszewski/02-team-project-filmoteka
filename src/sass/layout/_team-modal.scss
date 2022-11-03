@@ -1,0 +1,279 @@
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin centrFlex($dflex: flex) {
+  display: $dflex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  padding: 20px;
+
+  @media screen and (max-width: 388px) {
+    align-items: start;
+  }
+
+  @include mobile {
+    padding: 0;
+
+    @media screen and (max-height: 352px) {
+      align-items: start;
+    }
+  }
+
+  @include tablet {
+    @media screen and (max-height: 358px) {
+      align-items: start;
+    }
+  }
+
+  @include desktop {
+    @media screen and (max-height: 480px) {
+      align-items: start;
+    }
+  }
+}
+
+.tm-content {
+  width: 100%;
+  background-color: #dfc6a5bb;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid transparent;
+  border-radius: 16px;
+  background-clip: padding-box;
+  box-shadow: 0 6px 9px $orange, inset 0 0 9px $orange;
+
+  &::after {
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: linear-gradient(#ff6b02, #ff001b);
+    content: '';
+    z-index: -1;
+    border-radius: 16px;
+  }
+
+  @include mobile {
+    width: 440px;
+    padding-bottom: 20px;
+  }
+
+  @include tablet {
+    width: 660px;
+    padding-bottom: 28px;
+  }
+
+  @include desktop {
+    width: 1000px;
+    padding-bottom: 40px;
+  }
+
+  .tm-header {
+    width: 100%;
+    @include centrFlex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: $black;
+    font-weight: bold;
+    padding: 5px;
+
+    @include mobile {
+      font-size: 22px;
+    }
+
+    @include tablet {
+      font-size: 30px;
+    }
+
+    @include desktop {
+      font-size: 40px;
+    }
+  }
+
+  .tm-header-container {
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+
+    @include tablet {
+      margin-bottom: 20px;
+      margin-top: 15px;
+    }
+
+    @include desktop {
+      margin-top: 25px;
+    }
+  }
+
+  .tm-close-btn {
+    @include centrFlex;
+    position: absolute;
+    padding-top: 4px;
+    padding-left: 8px;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: $orange solid 1px;
+
+    cursor: pointer;
+    transition: $shift;
+
+    &:hover,
+    &:focus {
+      background-color: $orange;
+      fill: $white;
+    }
+  }
+
+  .tm-body {
+    @include centrFlex;
+    width: 100%;
+  }
+
+  .tm-members {
+    @include centrFlex;
+    flex-wrap: wrap;
+  }
+
+  .tm-members-item {
+    @include centrFlex;
+    flex-direction: column;
+    width: 114px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      width: 120px;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      &:nth-child(n + 7) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
+
+      &:nth-child(n + 6) {
+        margin-bottom: 0;
+      }
+
+      width: 125px;
+    }
+
+    @include desktop {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      &:nth-child(n + 6) {
+        margin-bottom: 0;
+      }
+
+      width: 180px;
+    }
+  }
+
+  .member-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 30% 0;
+    background-color: #848ea5;
+    transition: transform 0.35s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @include mobile {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include tablet {
+      width: 90px;
+      height: 90px;
+    }
+
+    @include desktop {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .member-link {
+    margin-bottom: 5px;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+  }
+
+  .member-name {
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2px;
+
+    @include tablet {
+      font-size: 12px;
+    }
+
+    @include desktop {
+      font-size: 17px;
+    }
+  }
+
+  .member-position {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(110, 110, 110);
+
+    @include tablet {
+      font-size: 12px;
+    }
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+}

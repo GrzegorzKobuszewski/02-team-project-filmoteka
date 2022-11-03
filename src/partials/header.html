@@ -1,0 +1,78 @@
+<header class="header" id="go-top">
+  <div class="container nav__container">
+    <div class="nav">
+      <!-- LOGO -->
+      <div class="nav__logo--container">
+        <a class="nav__logo" href="index.html">
+          <svg class="nav__icon icon">
+            <use href="/images/svg/symbol-defs.svg#icon-film"></use>
+          </svg>
+          <span class="nav__title main-header">Filmoteka</span>
+        </a>
+        <!-- przycisk MODAL utworzony tymczasowo     -->
+        <!-- <button class="background__button" type="button" data-modal-open>MODAL</button> -->
+      </div>
+
+      <!-- NAVIGATION      -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item list">
+            <a class="navigation__link navigation__link--active link" href="index.html">home</a>
+          </li>
+          <li class="navigation__item list">
+            <a class="navigation__link link" id="library-btn" href="library.html">my library</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- SEARCH INPUT -->
+    <div class="header__search-form">
+      <form class="search-form__container" autocomplete="off" id="home">
+        <label class="search-form__label">
+          <input type="text" name="searchQuery" placeholder="Movie search" class="search-form__input" />
+        </label>
+        <button class="search-form__btn btn js-form-btn" type="submit">
+          <svg class="search-form__btn-icon icon" width="12" height="12">
+            <use href="./images/svg/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </button>
+        <div class="search-error search-error--hidden"></div>
+      </form>
+    </div>
+
+    <!-- GENRE -->
+    <div class="header__tools">
+      <div class="header__genre">
+        <select class="genre s-hidden">
+          <option class="header__genre-option" disabled selected>Choose genre</option>
+          <option class="genre-choice" value="Action">Action</option>
+          <option class="genre-choice" value="Adventure">Adventure</option>
+          <option class="genre-choice" value="Animation">Animation</option>
+          <option class="genre-choice" value="Comedy">Comedy</option>
+          <option class="genre-choice" value="Crime">Crime</option>
+          <option class="genre-choice" value="Documentary">Documentary</option>
+          <option class="genre-choice" value="Drama">Drama</option>
+          <option class="genre-choice" value="Family">Family</option>
+          <option class="genre-choice" value="Fantasy">Fantasy</option>
+          <option class="genre-choice" value="History">History</option>
+          <option class="genre-choice" value="Horror">Horror</option>
+          <option class="genre-choice" value="Music">Music</option>
+          <option class="genre-choice" value="Mystery">Mystery</option>
+          <option class="genre-choice" value="Romance">Romance</option>
+          <option class="genre-choice" value="Science Fiction">Science Fiction</option>
+          <option class="genre-choice" value="TV Movie">TV Movie</option>
+          <option class="genre-choice" value="Thriller">Thriller</option>
+          <option class="genre-choice" value="War">War</option>
+          <option class="genre-choice" value="Western">Western</option>
+        </select>
+      </div>
+
+      <!-- LIGHT/DARK MODE TOGGLER -->
+      <div class="header__toggle">
+        <input class="header__toggle-input" type="checkbox" name="theme" id="darkmode-toggle" />
+        <label class="header__toggle-label" for="darkmode-toggle"> </label>
+      </div>
+    </div>
+  </div>
+</header>

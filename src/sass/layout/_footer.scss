@@ -1,0 +1,63 @@
+.footer {
+    color: #545454;
+    background-color: #F7F7F7;
+}
+
+.footer__icon-heart {
+    margin: 0px 8px;
+}
+
+.body__container {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+.footer__container {
+    @include flexcenter;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    padding: 24px 35px;
+
+    @media screen and (min-width: 768px) {
+        padding: 26px 0;
+        font-size: 16px;
+        line-height: 1.17;
+    }
+}
+
+.footer__text {
+    text-align: center;
+    @include flexcenter;
+}
+
+.footer__text-btn {
+    @media screen and (max-width: 767px) {
+        margin-top: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 5px;
+    }
+}
+
+.footer__btn {
+    text-decoration: underline;
+    text-align: center;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+
+    transition: transform linear 250ms;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        color: $orange;
+    }
+}

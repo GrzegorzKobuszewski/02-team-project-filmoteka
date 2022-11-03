@@ -1,0 +1,118 @@
+.header__toggle-label {
+  width: 50px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+}
+
+.header__toggle-input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.header__toggle-input:checked + .header__toggle-label {
+  background: #242424;
+}
+
+.header__toggle-input:checked + .header__toggle-label:after {
+  left: 49px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.header__toggle-label:active:after {
+  width: 26px;
+}
+
+.header__toggle-input:checked + .header__toggle-label + .background {
+  background: #242424;
+}
+
+// THEME
+
+body.light-theme {
+  background-color: $white;
+  color: $gray;
+}
+
+body.dark-theme {
+  background-color: $gray;
+  color: $white;
+
+  .footer,
+  .genre,
+  .modal,
+  .movie-card__title,
+  .description__film,
+  .description__text,
+  .popularity__value,
+  .title__value,
+  .genre__value {
+    color: $white;
+  }
+
+  .footer,
+  .genre,
+  .modal {
+    background-color: $eerie;
+  }
+
+  .movie-card__title {
+    font-weight: 400;
+  }
+
+  .modal__close-btn {
+    fill: $gray55;
+    border-color: $gray55;
+
+    &:hover,
+    &:focus {
+      fill: $orange;
+      border-color: $orange;
+    }
+  }
+
+  .styledSelect,
+  .styledSelect:active,
+  .styledSelect.active {
+    background-color: $gray55;
+  }
+
+  .options li {
+    background-color: $eerie;
+    color: $gray55;
+
+    &:hover,
+    &:focus {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+  .pagination a {
+    color: $white;
+  }
+
+  .votes__mark {
+    background-color: #505050;
+    color: $white;
+  }
+}

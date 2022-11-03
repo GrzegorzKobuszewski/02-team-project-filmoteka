@@ -1,0 +1,35 @@
+.btn {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__close-btn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 8px;
+    right: 10px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: $shift;
+
+    fill: $black;
+    background-color: #f7f7f7;
+
+    &:hover,
+    &:focus {
+        fill: $white;
+        background-color: $orange;
+    }
+
+}

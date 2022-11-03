@@ -1,0 +1,19 @@
+$main-font: 'Roboto', sans-serif;
+
+// Basic colors
+$black: #000000;
+$white: #ffffff;
+$eerie: #252525;
+$gray: #333333;
+$gray55: #8c8c8c;
+$orange: #FF6B08;
+$footer-bg:#F7F7F7; 
+
+$shift: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+$box-shadow: 5px 5px 5px 1px rgba(255, 107, 1, 0.425);
+
+@mixin flexcenter($d: flex, $ai: center, $jc: center) {
+    display: $d;
+    align-items: $ai;
+    justify-content: $jc;
+}

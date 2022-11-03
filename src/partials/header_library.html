@@ -1,0 +1,43 @@
+<header class="header header--library" id="go-top">
+  <div class="container nav__container">
+    <div class="nav">
+      <!-- LOGO -->
+      <div class="nav__logo--container">
+        <a class="nav__logo" href="index.html">
+          <svg class="nav__icon icon">
+            <use href="/images/svg/symbol-defs.svg#icon-film"></use>
+          </svg>
+          <span class="nav__title main-header">Filmoteka</span>
+        </a>
+      </div>
+
+      <!-- NAVIGATION      -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item list">
+            <a class="navigation__link link" href="index.html">home</a>
+          </li>
+          <li class="navigation__item list">
+            <a class="navigation__link navigation__link--active link" href=" library.html">my library</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- LIBRARY BUTTONS -->
+
+    <div class="library visually-hidden">
+      <div>
+        <button class="library__btn library__btn--selected btn" id="btn-watched" js-btn-watched>
+          Watched
+        </button>
+        <button class="library__btn btn" id="btn-queue" js-btn-queue>Queue</button>
+      </div>
+    </div>
+
+    <div class="header__toggle-library">
+      <input class="header__toggle-input" type="checkbox" name="theme" id="darkmode-toggle" />
+      <label class="header__toggle-label" for="darkmode-toggle"> </label>
+    </div>
+  </div>
+</header>
