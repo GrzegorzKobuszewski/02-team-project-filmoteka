@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://grzegorzkobuszewski.github.io/02-team-project-filmoteka",
+  "homepage": "https://GrzegorzKobuszewski.github.io/02-team-project-filmoteka",
   "scripts": {
     "start": "parcel src/*.html",
     "dev": "parcel src/*.html",
