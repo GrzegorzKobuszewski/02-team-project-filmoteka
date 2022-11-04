@@ -11,7 +11,7 @@ const noPosterImage = require('../images/misc/no_picture.jpg');
 // Scenariusz 1: FIRST LOAD
 // Scenariusz 2: SEARCH MOVIE
 // Scenariusz 3: GENRE SELECT
-// Scenariusz 4: TRENDING DAY / TRENDING WEEK (Klient odrzucił tę funkcjonalność :)
+// Scenariusz 4: TRENDING DAY / TRENDING WEEK (umówmy się, że klient odrzucił tę funkcjonalność :)
 
 // Ustalanie gatunku/gatunków filmu
 // Paginacja
